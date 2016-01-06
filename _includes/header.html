@@ -1,6 +1,12 @@
+<div style="width:100%;">
+<ul id='menu'>
 {% assign sorted_pages = site.pages | sort:"date" %}
 {% for page in sorted_pages %}
-  {% if page.categories contains 'main' %}
+  {% if page.categories contains 'menu' %}
+    <li id='item'>
     <a href="{{page.url}}">{{page.name | split: '.' | first}}</a> 
+    </li>
   {% endif %}
 {% endfor %}
+</ul>
+</div>

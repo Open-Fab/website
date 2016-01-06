@@ -1,0 +1,24 @@
+---
+#Dashes needed to wakeup jekyll.
+---
+#menu {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+
+#item {
+    float: left;
+    margin-bottom: 0;
+    background: #eee;
+    line-height: 1;
+    border: 1px solid #ddd;
+}
+
+a {
+        padding: 0.25em 0.5em; display: block; border: none; 
+        color: hotpink;
+}

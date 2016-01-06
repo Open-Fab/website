@@ -1,8 +1,6 @@
-categories: [main]
+sass:
+    sass_dir: _scss
+    style: :compressed
 
-defaults:
-    -
-        scope:
-            layout: "pages"
-        values:
-            categories: [main]
+categories: [menu]
+
