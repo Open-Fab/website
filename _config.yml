@@ -1,0 +1,8 @@
+categories: [main]
+
+defaults:
+    -
+        scope:
+            layout: "pages"
+        values:
+            categories: [main]
