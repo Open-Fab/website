@@ -1,12 +1,21 @@
-<div style="width:100%;">
-<ul id='menu'>
+<header>
+<div id='mylogo'></div>
+<nav>
+
+<ul>
 {% assign sorted_pages = site.pages | sort:"date" %}
-{% for page in sorted_pages %}
-  {% if page.categories contains 'menu' %}
-    <li id='item'>
-    <a href="{{page.url}}">{{page.name | split: '.' | first}}</a> 
+{% for mpage in sorted_pages %}
+  {% if mpage.categories contains 'menu' %}
+    <li>
+    {% if mpage.url == page.url %}
+    <a href="{{mpage.url}}" class="selected">{{mpage.name | split: '.' | first}}</a> 
+    {% else %}
+    <a href="{{mpage.url}}">{{mpage.name | split: '.' | first}}</a> 
+    {% endif %}
     </li>
   {% endif %}
 {% endfor %}
 </ul>
-</div>
+</nav>
+
+</header>
