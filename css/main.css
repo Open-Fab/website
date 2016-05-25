@@ -1,0 +1,191 @@
+---
+---
+
+html {
+    font-family: sans-serif; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+    background-image: url('back.svg');
+    background-size: cover;
+    background-repeat: repeat;
+    line-height: 130%;
+
+}
+
+body {
+    margin: 3em auto 3em;
+    padding: 1em;
+    border: thin solid;
+    border-color: black;
+    border-radius: 1em;
+    max-width: 50%;
+    min-width: 60em;
+    background: white;
+    font-family: oxygen,sans-serif;
+}
+header{
+    text-align: center;
+    margin: 0em auto;
+}
+nav {
+    padding:0;
+    margin: 0 auto;
+}
+
+#mylogo {
+    width:36em;
+    height: 8em;
+    background-image: url('logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    background: white;
+    list-style: none;
+}
+nav li {
+text-transform: capitalize;
+    margin: 0 auto;
+    display: inline-block;
+
+   }
+nav li > a ,
+nav li > a:visited {
+    color: white;
+    transition: color 0.25s;
+    background:black;
+    transition: background 0.25s;
+    white-space: nowrap;
+    padding: 0 12px; 
+    border-top-left-radius: 0.5em ;
+    border-top-right-radius: 0.5em ;
+}
+
+nav li > a:hover,
+nav li > a:active {
+        background:gray;
+}
+
+nav .selected,
+nav .selected:hover,
+nav .selected:active, 
+nav .selected:visited {
+    z-index: 1000;
+    color: black;
+    background: white;
+    border-color: black black white ;
+    border-width: 1px;
+    border-bottom-width: 2px;
+    border-style: solid;
+}
+
+a {
+    color: black;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white; 
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: none;
+}
+
+
+main {
+    background: #FFFFFF;
+    margin: 0 auto;
+    border: solid;
+    border-radius: 0.6em;
+    border-width: 1px;
+    border-color: black ; 
+}
+
+section {
+    padding: 2em 5em 2em 5em;
+    border-color: black; 
+    margin: 0.5em;
+    text-align: justify;
+    border-width: 1px;
+    border-radius:1em;
+}
+
+ 
+/*section > p:first-child:first-letter {
+    font-size: 200%;
+    font-family: serif;
+}*/ 
+
+.insert {
+    width:80%;
+    margin: 0 auto;
+}
+ul.enlarge{
+    list-style-type:none; /*remove the bullet point*/
+    margin: 0, auto;
+    text-align: center;
+}
+ul.enlarge li{
+    text-align: center;
+    display:inline-block; /*places the images in a line*/
+    position: relative;
+    vertical-align: middle; 
+    z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+    margin: 1em;
+}
+ul.enlarge img{
+    background-color:white;
+    padding: 6px;
+    border-radius: 4px; 
+}
+ul.enlarge span{
+    position:absolute;
+    left: -9999px;
+    background-color:white;
+    padding: 10px;
+    font-family: 'Droid Sans', sans-serif;
+    font-size:.9em;
+    text-align: center; 
+    color: black;
+    border-radius:8px;
+    border: thin solid;
+    border-color: black;
+}
+ul.enlarge li:hover{
+    z-index: 50;
+    cursor:pointer;
+}
+ul.enlarge span img{
+    padding:2px;
+    background:#ccc;
+}
+ul.enlarge li img{
+    width: 150px;
+    border-radius:1em;
+}
+ul.enlarge li:hover span img {
+    width: 450px;
+}
+ul.enlarge li:hover span{ 
+    top: -300%; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+    left: -150px; /*distance from the left of the thumbnail to the left of the popup image*/
+    transform: translate(0, 0px);
+}
+
+.center {
+    margin: auto;
+    width: 255px;
+    height: 570px;
+}
